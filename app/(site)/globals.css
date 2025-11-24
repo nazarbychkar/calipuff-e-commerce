@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* New custom colors */
+  --color-orange: #ffa500;
+  --color-gold: #ffd700;
+  --color-turquoise: #40e0d0;
+
+  /* Fonts */
+  --font-sans: "Montserrat", "Poppins", Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-orange: var(--color-orange); /* Add your custom colors here */
+  --color-gold: var(--color-gold);
+  --color-turquoise: var(--color-turquoise);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.montserrat {
+  font-family: var(--font-sans);
+}
+
+.poppins {
+  font-family: var(--font-sans);
+}
